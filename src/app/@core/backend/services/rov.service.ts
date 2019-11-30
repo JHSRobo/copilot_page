@@ -21,8 +21,8 @@ export class RovService implements OnDestroy {
      * List of subscriber information that is later initialized
      */
     private topicInformation = [
-        {key: 'verticalDrive', name: '/rov/cmd_horizontal_vdrive', messageType: 'vector_drive/thrusterPercents'},
-        {key: 'horizontalDrive', name: '/rov/cmd_horizontal_hdrive', messageType: 'vector_drive/thrusterPercents'},
+        {key: 'verticalDrive', name: '/rov/cmd_vertical_vdrive', messageType: 'vector_drive/thrusterPercents'},
+        {key: 'horizontalDrive', name: '/rov/cmd_horizontal_vdrive', messageType: 'vector_drive/thrusterPercents'},
         {key: 'drq1', name: '/rov/drq1250_1', messageType: 'drq1250/DRQ1250'},
         {key: 'drq2', name: '/rov/drq1250_2', messageType: 'drq1250/DRQ1250'},
         {key: 'cameras', name: '/rov/camera_select', messageType: 'std_msgs/UInt8'},

@@ -39,9 +39,9 @@ export class SensitivityComponent {
 
   publishRosMessage() {
     this.rosService.topic('sensitivity').publish({
-      l_scale: this.linearSensitivity,
-      a_scale: this.angularSensitivity,
-      v_scale: this.verticalSensitivity,
+      l_scale: this.linearSensitivity / 100,
+      a_scale: this.angularSensitivity / 100,
+      v_scale: this.verticalSensitivity / 100,
     });
   }
 

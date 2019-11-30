@@ -18,11 +18,15 @@ export class HorizontalRovVisualizationComponent implements OnInit {
 
   ngOnInit() {
     this.rovService.topic('horizontalDrive').data.subscribe(v => {
-      this.thruster1 = v.t1;
-      this.thruster2 = v.t2;
-      this.thruster3 = v.t3;
-      this.thruster4 = v.t4;
+      this.thruster1 = this.convertToPercent(v.t1);
+      this.thruster2 = this.convertToPercent(v.t2);
+      this.thruster3 = this.convertToPercent(v.t3);
+      this.thruster4 = this.convertToPercent(v.t4);
     });
+  }
+
+  convertToPercent(thrusterValue) {
+    return Math.round(thrusterValue / 10);
   }
 
 }

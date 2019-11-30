@@ -17,8 +17,8 @@ export class VerticalRovVisualizationComponent implements OnInit {
 
   ngOnInit() {
     this.rovService.topic('verticalDrive').data.subscribe(v => {
-      this.thruster1 = v.t1;
-      this.thruster2 = v.t2;
+      this.thruster1 = v.t1 / 10;
+      this.thruster2 = v.t2 / 10;
     });
   }
 
