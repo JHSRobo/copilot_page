@@ -20,7 +20,7 @@ import {RovService} from '../../../@core/backend/services/rov.service';
   `,
   styleUrls: ['./thruster-visual.component.scss'],
 })
-export class ThrusterVisualComponent implements OnInit{
+export class ThrusterVisualComponent implements OnInit {
   thrusters: Array<number> = [0, 0, 0, 0, 0, 0];
 
   constructor(

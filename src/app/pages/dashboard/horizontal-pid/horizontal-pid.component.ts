@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
       <nb-card-body>
       </nb-card-body>
     </nb-card>
-  `,  styleUrls: ['./horizontal-pid.component.scss']
+  `,  styleUrls: ['./horizontal-pid.component.scss'],
 })
 export class HorizontalPidComponent implements OnInit {
 

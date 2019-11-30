@@ -58,7 +58,7 @@ export class VerticalPidComponent implements OnInit {
       }
     });
 
-    this.rovService.topic('verticalPidSetPoint').data.subscribe(v=> {
+    this.rovService.topic('verticalPidSetPoint').data.subscribe(v => {
       this.setDepth = v.data;
       this.difference = this.setDepth - this.actualDepth;
       this.calculateMargin();

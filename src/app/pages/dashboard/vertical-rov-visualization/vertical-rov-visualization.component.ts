@@ -4,7 +4,7 @@ import {RovService} from '../../../@core/backend/services/rov.service';
 @Component({
   selector: 'ngx-vertical-rov-visualization',
   templateUrl: './vertical-rov-visualization.component.html',
-  styleUrls: ['./vertical-rov-visualization.component.scss']
+  styleUrls: ['./vertical-rov-visualization.component.scss'],
 })
 export class VerticalRovVisualizationComponent implements OnInit {
 

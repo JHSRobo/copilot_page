@@ -5,7 +5,7 @@ import {
   NbLayoutModule, NbListModule,
   NbMenuModule, NbPopoverModule,
   NbSearchModule, NbSelectModule,
-  NbSidebarModule, NbTabsetModule, NbToggleModule, NbTooltipModule,
+  NbSidebarModule, NbTabsetModule, NbToggleModule,
 } from '@nebular/theme';
 
 import { ThemeModule } from '../../@theme/theme.module';

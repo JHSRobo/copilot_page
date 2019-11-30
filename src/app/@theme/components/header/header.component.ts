@@ -57,7 +57,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
       )
       .subscribe(themeName => this.currentTheme = themeName);
 
-    this.rovService.topic('thrusterStatus').data.subscribe((v) => {this.rovEnabled = v.data;});
+    this.rovService.topic('thrusterStatus').data.subscribe((v) => {this.rovEnabled = v.data; });
     this.rovService.connected.subscribe(v => this.topsideConnected = v);
     this.rovService.topic('tcuPower').data.subscribe(v => this.rovPowered = v.data);
   }

@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import {Component, Input, OnChanges} from '@angular/core';
 
 @Component({
   selector: 'ngx-thruster',
@@ -11,7 +11,7 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
         <ngx-thruster-slider [inputValue]="positiveVector" class="vector col-5 p-0"></ngx-thruster-slider>
       </div>
   `,
-  styleUrls: ['./thruster.component.scss']
+  styleUrls: ['./thruster.component.scss'],
 })
 export class ThrusterComponent implements OnChanges {
 

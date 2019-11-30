@@ -61,7 +61,7 @@ export class RovService implements OnDestroy {
             this.connected.next(true);
             // TODO Alert
         });
-        this.ros.on('close', () => {this.connected.next(false)});
+        this.ros.on('close', () => {this.connected.next(false); });
         return true;
     }
 

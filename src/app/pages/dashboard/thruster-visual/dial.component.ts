@@ -194,7 +194,7 @@ export class DialComponent implements AfterViewInit, OnDestroy, OnChanges {
               hoverAnimation: false,
             },
             {
-              value: 100-number,
+              value: 100 - number,
               tooltip: {
                 show: false,
               },
@@ -212,7 +212,7 @@ export class DialComponent implements AfterViewInit, OnDestroy, OnChanges {
           ],
         },
       ],
-    })
+    });
   }
 
   onChartInit(ec) {

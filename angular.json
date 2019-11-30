@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-admin-demo": {
+    "copilot-page": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
