@@ -9,11 +9,11 @@ import {RovService} from '../../../@core/backend/services/rov.service';
           PID Controller
       </nb-card-header>
       <nb-card-body>
-          <button nbButton size="small" fullWidth [status]="yawPidStatus ? 'success' : 'danger'" (click)="toggleYaw()">Yaw Pid</button>
-          <button nbButton size="small" fullWidth [status]="rollPidStatus ? 'success' : 'danger'" (click)="toggleRoll()">Roll Pid</button>
-          <button nbButton size="small" fullWidth [status]="vertPidStatus ? 'success' : 'danger'" (click)="toggleVert()">Vert Pid</button>
-          <button nbButton size="small" fullWidth [status]="latPidStatus ? 'success' : 'danger'" (click)="toggleLat()">Lat Pid</button>
-          <button nbButton size="small" fullWidth [status]="longPidStatus ? 'success' : 'danger'" (click)="toggleLong()">Long Pid</button>
+          <button nbButton class="my-1" size="small" fullWidth [status]="yawPidStatus ? 'success' : 'danger'" (click)="toggleYaw()">Yaw Pid</button>
+          <button nbButton class="my-1" size="small" fullWidth [status]="rollPidStatus ? 'success' : 'danger'" (click)="toggleRoll()">Roll Pid</button>
+          <button nbButton class="my-1" size="small" fullWidth [status]="vertPidStatus ? 'success' : 'danger'" (click)="toggleVert()">Vert Pid</button>
+          <button nbButton class="my-1" size="small" fullWidth [status]="latPidStatus ? 'success' : 'danger'" (click)="toggleLat()">Lat Pid</button>
+          <button nbButton class="my-1" size="small" fullWidth [status]="longPidStatus ? 'success' : 'danger'" (click)="toggleLong()">Long Pid</button>
       </nb-card-body>
     </nb-card>
   `,  styleUrls: ['./pid-controller.component.scss'],
