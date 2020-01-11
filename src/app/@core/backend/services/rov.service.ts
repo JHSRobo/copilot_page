@@ -34,7 +34,11 @@ export class RovService implements OnDestroy {
         {key: 'externalTelemetry', name: '/rov/ms5837', messageType: 'ms5837/ms5837_data'},
         {key: 'verticalPidSetPoint', name: '/depth_hold/setpoint', messageType: 'std_msgs/Float64'},
         {key: 'verticalPidEnable', name: '/depth_hold/pid_enable', messageType: 'std_msgs/Bool'},
-        {key: 'test', name: '/test', messageType: 'std_msgs/UInt8'},
+        {key: 'yawPid', name: '/yaw_motion/pid_enable', messageType: 'std_msgs/Bool'},
+        {key: 'rollPid', name: '/roll_motion/pid_enable', messageType: 'std_msgs/Bool'},
+        {key: 'vertPid', name: '/vert_motion/pid_enable', messageType: 'std_msgs/Bool'},
+        {key: 'latPid', name: '/lat_motion/pid_enable', messageType: 'std_msgs/Bool'},
+        {key: 'longPid', name: '/long_motion/pid_enable', messageType: 'std_msgs/Bool'},
     ];
 
     /**
@@ -74,20 +78,10 @@ export class RovService implements OnDestroy {
         }
         return true;
     }
-    //
-    // publishTopic(key, data): void {
-    //     this.subscribers.find(o => o.key === key).publish(data);
-    // }
-    //
-    // subscribeTopic(key): Observable<any> {
-    //     return this.subscribers.find(key).data;
-    // }
 
     topic(key: string) {
         return this.subscribers.find(o => o.key === key);
     }
-
-    // TOPIC Subscribers
 }
 
 /**
